@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Pasindu
- */
+
 public class SessionModel {
     private int session_id,no_of_students;
     private WorkingDayManagemenHasDay2 duration;

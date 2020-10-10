@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Pasindu
- */
+
 public class Lecturer {
     
     private String employee_id;

@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Pasindu
- */
+
 public class WorkingDayManagemenHasDay2 {
     private int id;
     private WorkingDayManagementModel working_day_management_wdm_id;

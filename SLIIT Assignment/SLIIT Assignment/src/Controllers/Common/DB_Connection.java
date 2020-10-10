@@ -13,20 +13,17 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Map;
 
-/**
- *
- * @author Pasindu
- */
+
 public class DB_Connection {
 
     static Connection c;
 
     private static void setConnection() throws Exception {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-//        Class.forName("com.mysql.jdbc.Driver");
+       //Class.forName("com.mysql.cj.jdbc.Driver");
+      Class.forName("com.mysql.jdbc.Driver");
 
-        c = DriverManager.getConnection("jdbc:mysql://db4free.net:3306/slitttimetable", "slittuser1", "SlitUser123");
-//        c = DriverManager.getConnection("jdbc:mysql://localhost:3306/sliit_timetable", "root", "");
+       // c = DriverManager.getConnection("jdbc:mysql://db4free.net:3306/slitttimetable", "slittuser1", "SlitUser123");
+     c = DriverManager.getConnection("jdbc:mysql://localhost:3306/sliit_timetable", "root", "");
     }
 
     public static int iud(String sql) throws Exception {

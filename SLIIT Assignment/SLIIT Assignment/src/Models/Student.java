@@ -22,12 +22,7 @@ public class Student {
     private Models.Programme programme;
     private int status_id;
 
-    public Student(int student_id) {
-        this.student_id = student_id;
-    }
-    
-    public Student(int student_id, String academic_year, String group_no, String sub_group_no, String group_id, String sub_group_id, Faculty faculty, Semester semester, Programme programme, int status_id) {
-        this.student_id = student_id;
+    public Student(String academic_year, String group_no, String sub_group_no, String group_id, String sub_group_id, Faculty faculty, Semester semester, Programme programme, int status_id) {
         this.academic_year = academic_year;
         this.group_no = group_no;
         this.sub_group_no = sub_group_no;
@@ -38,12 +33,6 @@ public class Student {
         this.programme = programme;
         this.status_id = status_id;
     }
-
-    public Student(int student_id, int status_id) {
-        this.student_id = student_id;
-        this.status_id = status_id;
-    }
-    
 
     public int getStudent_id() {
         return student_id;
@@ -124,8 +113,6 @@ public class Student {
     public void setStatus_id(int status_id) {
         this.status_id = status_id;
     }
-
-  
 
     
     

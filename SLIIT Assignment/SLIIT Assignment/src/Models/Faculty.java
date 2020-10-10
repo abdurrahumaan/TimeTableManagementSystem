@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Thilanga Attanayake
- */
+
 public class Faculty {
     
     private int faculty_id;

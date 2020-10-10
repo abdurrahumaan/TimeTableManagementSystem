@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Thilanga Attanayake
- */
+
 public class Levels {
     
     private int center_id;

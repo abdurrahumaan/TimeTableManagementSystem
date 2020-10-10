@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Thilanga Attanayake
- */
+
 public class Programme {
     
     private int programme_id;

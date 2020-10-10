@@ -14,10 +14,7 @@ import Models.LocationModel;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-/**
- *
- * @author Pasindu
- */
+
 public class LecturerController {
 
     FacultyController facultyController;

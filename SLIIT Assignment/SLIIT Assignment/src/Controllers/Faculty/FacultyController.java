@@ -10,10 +10,7 @@ import Models.Faculty;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-/**
- *
- * @author Thilanga Attanayake
- */
+
 public class FacultyController {
 
     public ArrayList<Models.Faculty> getFaculties() {

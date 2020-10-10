@@ -11,10 +11,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- *
- * @author Pasindu
- */
+
 public class Report {
     
     File file1;

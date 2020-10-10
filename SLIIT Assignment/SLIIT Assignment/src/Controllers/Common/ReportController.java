@@ -9,10 +9,7 @@ import Models.DayModel;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-/**
- *
- * @author Pasindu
- */
+
 public class ReportController {
 
     public ArrayList<DayModel> getDays() {

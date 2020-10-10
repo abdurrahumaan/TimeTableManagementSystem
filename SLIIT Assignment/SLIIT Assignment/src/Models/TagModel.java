@@ -13,10 +13,6 @@ public class TagModel {
     private int tag_id;
     private String tag_name;
     private int status;
-
-    public TagModel(int tag_id) {
-        this.tag_id = tag_id;
-    }
     
     public TagModel(String tag_name, int status) {
         this.tag_name = tag_name;

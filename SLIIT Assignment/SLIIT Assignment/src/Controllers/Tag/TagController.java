@@ -27,17 +27,6 @@ public class TagController {
         return tempReturn;
     }
 
-    public int updateTag(TagModel tagModel) {
-        int tempReturn = 0;
-        try {
-            tempReturn = DB_Connection.iud("UPDATE tag SET tag_name='" + tagModel.getTag_name() + "' WHERE tag_id=" + tagModel.getTag_id());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return tempReturn;
-    }
-
     public ArrayList<TagModel> getAllActivated() {
         ArrayList<TagModel> tagModelListTemp = new ArrayList();
         try {
@@ -49,7 +38,7 @@ public class TagController {
         }
         return tagModelListTemp;
     }
-
+    
     public ArrayList<TagModel> getAll() {
         ArrayList<TagModel> tagModelListTemp = new ArrayList();
         try {
@@ -61,27 +50,15 @@ public class TagController {
         }
         return tagModelListTemp;
     }
-
+    
     public int deleteTag(TagModel tagModel) {
         int tempReturn = 0;
         try {
-            tempReturn = DB_Connection.iud("DELETE FROM tag WHERE tag_id=" + tagModel.getTag_id());
+            tempReturn = DB_Connection.iud("DELETE FROM tag WHERE tag_id="+tagModel.getTag_id());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         return tempReturn;
-    }
-
-    public TagModel getTag(int id) {
-        TagModel tag = null;
-        try {
-            ResultSet rs = DB_Connection.search("SELECT * FROM tag WHERE tag_id=" + id);
-            if (rs.first()) {
-                tag = new TagModel(rs.getInt(1), rs.getString(2), rs.getInt(3));
-            }
-        } catch (Exception e) {
-        }
-        return tag;
     }
 }

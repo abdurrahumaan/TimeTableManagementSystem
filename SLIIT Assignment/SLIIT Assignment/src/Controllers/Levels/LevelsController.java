@@ -11,10 +11,7 @@ import Models.Levels;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-/**
- *
- * @author Thilanga Attanayake
- */
+
 public class LevelsController {
 
     public ArrayList<Levels> getFaculties() {

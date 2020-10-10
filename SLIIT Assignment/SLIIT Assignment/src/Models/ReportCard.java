@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author Pasindu
- */
+
 public class ReportCard {
     private String param1,param2,param3,param4="";
 

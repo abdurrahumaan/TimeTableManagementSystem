@@ -13,22 +13,10 @@ public class Semester {
     
     private int semester_id;
     private String semester;
-    private int status;
 
-    public Semester(int semester_id, String semester, int status) {
+    public Semester(int semester_id, String semester) {
         this.semester_id = semester_id;
         this.semester = semester;
-        this.status = status;
-    }
-
-    public Semester(String semester, int status) {
-        this.semester = semester;
-        this.status = status;
-    }
-
-    public Semester(int semester_id, int status) {
-        this.semester_id = semester_id;
-        this.status = status;
     }
 
     public int getSemester_id() {
@@ -46,13 +34,7 @@ public class Semester {
     public void setSemester(String semester) {
         this.semester = semester;
     }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
+    
+    
     
 }
